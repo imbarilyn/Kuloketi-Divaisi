@@ -19,15 +19,25 @@ function openPopup(){
         .then(resp => resp.json())
         .then(loc => {
             locate.textContent = loc.principalSubdivision;
-        })
-    
-    
+        })   
     }
+
+    function error (error){
+        alert(`${error.mesage}`);
+
+    }
+
+    // const options = {
+    //     timeOut: 15000,
+    //     maximumAge: 40000,
+    //     enableHighAccuracy: 350
+
+    // }
     if(!navigator.geolocation){
         alert("Oppss!! seems there is no gelocation functionality");
     }
     else{
-        navigator.geolocation.getCurrentPosition(success);
+        navigator.geolocation.getCurrentPosition(success, error);
     }
 }
 function closePopup (){
