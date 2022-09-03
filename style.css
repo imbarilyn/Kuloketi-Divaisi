@@ -104,7 +104,7 @@
 /* meain section */
 
 .main {
-    background-color: var(--darkgray);    
+    background-color: var(--white);    
 }
 .main__container {
     display: grid;
