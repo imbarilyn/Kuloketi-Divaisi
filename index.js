@@ -27,12 +27,12 @@ function openPopup(){
 
     }
 
-    // const options = {
-    //     timeOut: 15000,
-    //     maximumAge: 40000,
-    //     enableHighAccuracy: 350
+    const options = {
+        timeOut: 15000,
+        maximumAge: 40000,
+        enableHighAccuracy: 350
 
-    // }
+    }
     if(!navigator.geolocation){
         alert("Oppss!! seems there is no gelocation functionality");
     }
