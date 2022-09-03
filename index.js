@@ -15,11 +15,11 @@ function openPopup(){
         const location = {lat:position.coords.latitude, lng:position.coords.longitude};
         console.log(location.lat+''+ location.lng);
          const geoApi_URL = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${location.lat}&longitude=${location.lng}&localityLanguage=en`;
-        // fetch(geoApi_URL)
-        // .then(resp => resp.json())
-        // .then(loc => {
-        //     locate.textContent = loc.principalSubdivision;
-        // })
+        fetch(geoApi_URL)
+        .then(resp => resp.json())
+        .then(loc => {
+            locate.textContent = loc.principalSubdivision;
+        })
     
     
     }
