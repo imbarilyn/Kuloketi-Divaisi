@@ -27,34 +27,36 @@
                     <a href="#" class="navbar__links">Products</a>
                 </li>
                 <li class="navbar__btn">
-                    <a href="#" class="button">Sign Up</a>
+                    <a href="#" class="navbutton">Sign Up</a>
                 </li>
              </ul>
         </div>
     </nav>
-    <!-- hero-section -->
     <div class="main">
         <div class="main__container">
-            <div class="main__content">
+            <div class="main-content">
                 <h1>GEO LOCATION</h1>
                 <h2>TECH</h2>
-                <p>Locate your damn self</p>
-                <div class="modal-locate">
-                    <button class="btn" >Locate Me</button>
-                    <div class="pop-up" id="popup">
-                        <img src="images/fav2.png" alt="location icon">
-                        <h2>Your Are in:</h2>
-                        <p>Nairobi</p>
-                        <button type="button" class="pop-btn" onclick="closePopup()">Close</button>
-                    </div>
-
-                </div>
-                
-            <!-- <div class="main__image">
+                <button class="pop-btn" type="submit" onclick="openPopup()">Locate self</button>
+            </div>
+            <div class="main__image">
                 <img src="images/locpic.svg" alt="locate pic">
-           </div>   -->
-        </div> 
-    </div> 
+           </div>
+        </div>
+        
+            <div class="container">        
+                <div class="pop-up" id="popup">
+                 <img src="images/fav2.png" alt="location icon">
+                 <h2>Thank you</h2>
+                 <p>Your detailes are sucessfully received</p>
+                 <button type="button" class="popout-btn" onclick="closePopup()">OK</button>
+                </div>
+            </div>
+    </div>
+    
+    
+  
+     <script src="index.js"></script>
     
 </body>
 </html>
