@@ -30,6 +30,6 @@ function openPopup(){
         navigator.geolocation.getCurrentPosition(success);
     }
 }
-// function closePopup (){
-//     popup.classList.remove("open-popup");
-// }
+function closePopup (){
+    popup.classList.remove("open-popup");
+}
