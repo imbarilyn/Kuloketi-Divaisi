@@ -4,6 +4,7 @@ function openPopup(){
     popup.classList.add("open-popup");
     let locate = document.querySelector('p');
 // The success executes once the user allows the browser to get location
+document.addEventListener('DOMContentLoaded', success);
     function success (position){
         const location = {lat:position.coords.latitude, lng:position.coords.longitude};
         console.log(location.lat+''+ location.lng);
@@ -14,19 +15,19 @@ function openPopup(){
             locate.textContent = loc.principalSubdivision;
         })   
     }
-// error function executes once there is an error in getting the geolaction object
 
+// error function executes once there is an error in getting the geolaction object
     function error (error){
         alert(`${error.mesage}`);
-
     }
+
 // The options object specifies more on fresh time accuracy and time span for cached information
     const options = {
         timeOut: 15000,
         maximumAge: 40000,
         enableHighAccuracy: 350
-
     }
+
 //the if function checks if the browser has the geolacation functionality
     if(!navigator.geolocation){
         alert("Oppss!! seems there is no gelocation functionality");
@@ -39,3 +40,4 @@ function openPopup(){
 function closePopup (){
     popup.classList.remove("open-popup");
 }
+// document.addEventListener('DOMContentLoaded', openPopup);
