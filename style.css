@@ -76,9 +76,6 @@
     padding: 0 1rem;
     width: 100%;
 }
-
-
-
 .navbutton {
     text-decoration: none;
     border: none;
@@ -103,6 +100,7 @@
     color: var(--brightred);
     transition: all 0.3s ease-in-out
 }
+/* Hero's section */
 
 .main {
     background-color: var(--darkgray);    
@@ -190,7 +188,6 @@
     font-size: 100%;
     box-shadow: 0 2px 5px rgba(172, 130, 130, 0.2);
 }
-
 
 .popout-btn {
     font-weight: bold;
